@@ -18,7 +18,7 @@
   <a class="skip" href="#main">Skip to content</a>
   <header id="header">
     <div class="wrap nav-wrap">
-      <a class="brand" href="#top"><img src="assets/hope-logo.png" alt="HOPE"><span>Open energy systems</span></a>
+      <a class="brand" href="#top"><img src="assets/favicon.svg" alt="" aria-hidden="true"><strong>HOPE</strong><span>Open energy systems</span></a>
       <button class="menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i><b>Menu</b></button>
       <nav id="nav" aria-label="Primary navigation">
         <a href="#platform">Platform</a><a href="#cases">Cases</a><a href="#research">Research</a><a href="#start">Get started</a>
@@ -32,7 +32,11 @@
       <div class="wrap hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow"><i></i> Open-source power-system intelligence</p>
-          <h1>Plan the grid.<br>Operate the system.<br><em>Coordinate the future.</em></h1>
+          <h1>
+            <span class="hero-name">Holistic Optimization<br>Program for Electricity</span>
+            <span class="hero-action">Plan the grid. Operate the system.</span>
+            <em class="hero-vision">Bring <strong>HOPE</strong> to the future.</em>
+          </h1>
           <p class="lede">HOPE connects long-term investment, production-cost simulation, electricity-market operations, power flow, and emerging AI-agent workflows in one transparent Julia platform.</p>
           <div class="actions"><a class="button primary" href="#platform">Explore the platform</a><a class="button secondary" href="https://github.com/HOPE-Model-Project/HOPE.jl" target="_blank" rel="noreferrer">View source</a></div>
           <div class="meta"><span><b>Julia</b> 1.9+</span><span><b>MIT</b> license</span><span><b>Open</b> models &amp; cases</span></div>
@@ -80,7 +84,16 @@
       <div class="wrap">
         <div class="heading heading-split reveal"><div><p class="eyebrow"><i></i> Model cases</p><h2>Grounded in real systems. Built for reproducible research.</h2></div><p>HOPEModelCases separates reusable software from study data, with systems ranging from test networks to regional models across the United States and Europe.</p></div>
         <div class="gallery">
-          <article class="case large reveal"><img src="assets/pjm-md-map.svg" alt="PJM Maryland 100-zone model case" loading="lazy"><div><span>PJM / MARYLAND</span><h3>Regional transition planning</h3><p>Expansion, policy, network, and reliability studies.</p></div></article>
+          <article class="case large reveal interactive-case">
+            <figure class="case-map-frame" data-interactive-map>
+              <img src="assets/usa64-buildout-map.png" alt="USA64 generation and transmission expansion planning map" loading="lazy">
+              <button class="map-launch" type="button" data-map-url="https://hope-model-project-hope-gtep-dashboard.hf.space/?embed=true">
+                <b>Launch interactive map</b>
+                <span>Pan, zoom, and inspect HOPE planning results</span>
+              </button>
+            </figure>
+            <div class="case-caption"><span>UNITED STATES / USA64</span><h3>Continental-scale transition planning</h3><p>Generation and transmission build-out across 64 regional zones.</p><a class="map-full-link" href="https://huggingface.co/spaces/HOPE-Model-Project/hope-gtep-dashboard" target="_blank" rel="noreferrer">Open full dashboard ↗</a></div>
+          </article>
           <article class="case reveal"><img src="assets/germany-map.svg" alt="Germany production-cost model case" loading="lazy"><div><span>GERMANY</span><h3>Production-cost modeling</h3></div></article>
           <article class="case reveal"><img src="assets/rts24-map.svg" alt="RTS-24 multi-zone model case" loading="lazy"><div><span>RTS-24</span><h3>Multi-zone system analysis</h3></div></article>
         </div>
